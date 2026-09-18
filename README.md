@@ -51,10 +51,7 @@ top of `AF3_array_job.sh`:
 `AF3_array_submit.sh` contains an absolute path to `AF3_array_job.sh` — update
 it if you move the scripts.
 
-**Limits.** The array is sized directly from the file count with no chunking,
-so more than ~1000 inputs will be rejected by `MaxArraySize`. AF3 writes
-straight to `<output_dir>` rather than node-local scratch. For large sets use
-the data + inference pipelines instead.
+** For large sets use the data + inference pipelines instead. **
 
 The archive is verified with `tar -tzf` before the original directory is
 removed, and ipSAE failures are non-fatal — they are logged to
