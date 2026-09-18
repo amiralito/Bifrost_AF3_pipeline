@@ -6,8 +6,8 @@ interface scoring.
 
 | folder | use it when |
 |---|---|
-| [`default_pipeline/`](#default_pipeline) | you have ready-made JSONs, each a complete job — MSA and inference together |
-| [`data_pipeline/`](#data_pipeline) | you want MSAs only, to reuse across many screens |
+| [`default_pipeline/`](#default_pipeline) | AlphaFold 3 default pipeline, calcuating MSA with every job |
+| [`data_pipeline/`](#data_pipeline) | MSAs + templates only, to reuse across many screens |
 | [`inference_pipeline/`](#inference_pipeline) | all-vs-all screen over pre-computed MSAs |
 
 MSA search is the expensive step. For anything combinatorial, run
